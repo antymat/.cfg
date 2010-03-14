@@ -1,0 +1,12 @@
+# toxine playlist
+
+entry {
+	identifier = http://media.onet.pl/media/isnz/200908/32787c0407.wmv;
+	mrl = http://media.onet.pl/media/isnz/200908/32787c0407.wmv;
+};
+
+entry {
+	identifier = mms://213.180.137.70/media.wsx?/isnz/200908/32787c0407.wmv;
+	mrl = mms://213.180.137.70/media.wsx?/isnz/200908/32787c0407.wmv;
+};
+# END
