@@ -1,0 +1,15 @@
+*
+!.vim
+!.bash_profile
+!.bashrc
+!.config
+!.git
+!.gitignore
+!.inputrc
+!.local
+!.minttyrc
+!.profile
+!.subversion
+!.vim/*
+!.vimrc
+*.zip
