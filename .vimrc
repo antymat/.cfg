@@ -12,5 +12,6 @@ set splitright
 "http://vim.wikia.com/wiki/Highlight_current_line
 set cursorline
 set bg=dark
+set ruler
 
 
