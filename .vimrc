@@ -13,5 +13,5 @@ set splitright
 set cursorline
 set bg=dark
 set ruler
-
+set hidden
 
