@@ -3,3 +3,4 @@ CursorType=block
 Columns=162
 Rows=76
 BellFlash=yes
+BackspaceSendsBS=yes
