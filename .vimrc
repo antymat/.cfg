@@ -14,4 +14,4 @@ set cursorline
 set bg=dark
 set ruler
 set hidden
-
+set nowrap
