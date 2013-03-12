@@ -23,7 +23,7 @@ set ic
 set fileencodings=ucs-bom,utf-8,latin2
 map <F12> :set number!<CR>
 "set noexpandtab
-au GUIEnter * simalt ~x
+"au GUIEnter * simalt ~x
 let Tlist_Inc_Winwidth = 0
 
 

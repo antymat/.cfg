@@ -6,29 +6,241 @@
 # Entries which are still set to their default values are commented out.
 # Remove the '#' at the beginning of the line, if you want to change them.
 
-gui.mrl_browser_y:97
+# Enable deinterlacing by default
+# bool, default: 0
+#gui.deinterlace_by_default:0
 
+# Configuration experience level
+# { Beginner  Advanced  Expert  Master of the known universe }, default: 0
+#gui.experience_level:Beginner
+
+# Enable OSD support
+# bool, default: 1
+#gui.osd_enabled:1
+
+# Dismiss OSD time (s)
+# numeric, default: 3
+#gui.osd_timeout:3
+
+# Ask user for playback with unsupported codec
+# bool, default: 0
+#gui.play_anyway:0
+
+# Automatically reload old playlist
+# bool, default: 0
+#gui.playlist_auto_reload:0
+
+# Audio visualization plugin
+# { oscope  fftscope  fftgraph  goom }, default: 0
+#gui.post_audio_plugin:oscope
+
+# gui skin theme
+# { xinetic }, default: 0
+#gui.skin:xinetic
+
+# Change xine's behavior for unexperienced user
+# bool, default: 1
+#gui.smart_mode:1
+
+# Snapshot location
+# string, default: /home/antymat
+#gui.snapshotdir:/home/antymat
+
+# Display splash screen
+# bool, default: 1
+#gui.splash:1
+
+# Subtitle autoloading
+# bool, default: 1
+#gui.subtitle_autoload:1
+
+# Visual animation style
+# { None  Post Plugin  Stream Animation }, default: 1
+#gui.visual_anim:Post Plugin
+
+# Windows stacking (more)
+# bool, default: 0
+#gui.always_layer_above:0
+
+# Audio mixer control method
+# { Sound card  Software }, default: 0
+#gui.audio_mixer_method:Sound card
+
+# Visiblility behavior of panel
+# bool, default: 0
+#gui.auto_panel_visibility:0
+
+# Visibility behavior of output window
+# bool, default: 0
+#gui.auto_video_output_visibility:0
+
+# Deinterlace plugin.
+# string, default: tvtime:method=LinearBlend,cheap_mode=1,pulldown=0,use_progressive_frame_flag=1
+#gui.deinterlace_plugin:tvtime:method=LinearBlend,cheap_mode=1,pulldown=0,use_progressive_frame_flag=1
+
+# Event sender behavior
+# bool, default: 1
+#gui.eventer_sticky:1
+
+# Windows stacking
+# bool, default: 0
+#gui.layer_above:0
+
+# Use unscaled OSD
+# bool, default: 1
+#gui.osd_use_unscaled:1
+
+# Screensaver reset interval (s)
+# numeric, default: 10
+#gui.screensaver_timeout:10
+
+# Menu shortcut style
+# { Windows style  Emacs style }, default: 0
+#gui.shortcut_style:Windows style
+
+# Stream information
+# bool, default: 0
+#gui.sinfo_auto_update:0
+
+# Skin Server Url
+# string, default: http://xine.sourceforge.net/skins/skins.slx
+#gui.skin_server_url:http://xine.sourceforge.net/skins/skins.slx
+
+# Chapter hopping
+# bool, default: 1
+#gui.skip_by_chapter:1
+
+# New stream sizes resize output window
+# bool, default: 1
+#gui.stream_resize_window:1
+
+# Tips timeout (ms)
+# numeric, default: 5000
+#gui.tips_timeout:5000
+
+# gui tips visibility
+# bool, default: 1
+#gui.tips_visible:1
+
+# Name of video display
+# string, default: 
+#gui.video_display:
+
+# Synchronized X protocol (debug)
+# bool, default: 0
+#gui.xsynchronize:0
+
+# Double size for small streams (require stream_resize_window)
+# bool, default: 0
+#gui.zoom_small_stream:0
+
+# Logo MRL
+# string, default: /usr/share/xine/skins/xine-ui_logo.png
+#gui.logo_mrl:/usr/share/xine/skins/xine-ui_logo.png
+
+# use XVidModeExtension when switching to fullscreen
+# bool, default: 0
+#gui.use_xvidext:0
+
+# height for xinerama fullscreen (-8192 = autodetect)
+# numeric, default: -8192
+#gui.xinerama_fullscreen_height:-8192
+
+# width for xinerama fullscreen (-8192 = autodetect)
+# numeric, default: -8192
+#gui.xinerama_fullscreen_width:-8192
+
+# x coordinate for xinerama fullscreen (-8192 = autodetect)
+# numeric, default: -8192
+#gui.xinerama_fullscreen_x:-8192
+
+# y coordinate for xinerama fullscreen (-8192 = autodetect)
+# numeric, default: -8192
+#gui.xinerama_fullscreen_y:-8192
+
+# Screens to use in order to do a very fullscreen in xinerama mode. (example 0 2 3)
+# string, default: 0 1
+#gui.xinerama_use_screens:0 1
+
+# Amplification level
+# [0..200], default: 100
+#gui.amp_level:100
+
+# gui panel visibility
+# bool, default: 1
 gui.panel_visible:0
 
+# numeric, default: 200
 gui.panel_x:568
 
+# numeric, default: 100
 gui.panel_y:794
+
+gui.mrl_browser_y:97
+
+# color specification yuv-opacity
+# string, default: 8080c0-f
+#gui.osdmenu.color_focused_button:8080c0-f
+
+# color specification yuv-opacity
+# string, default: 808080-f
+#gui.osdmenu.color_focused_slider:808080-f
+
+# color specification yuv-opacity
+# string, default: ff8080-f
+#gui.osdmenu.color_focused_slider_knob:ff8080-f
+
+# color specification yuv-opacity
+# string, default: 808080-f
+#gui.osdmenu.color_focused_text_border:808080-f
+
+# color specification yuv-opacity
+# string, default: ff8080-f
+#gui.osdmenu.color_focused_text_foreground:ff8080-f
+
+# color specification yuv-opacity
+# string, default: 0080c0-f
+#gui.osdmenu.color_label_border:0080c0-f
+
+# color specification yuv-opacity
+# string, default: c08080-f
+#gui.osdmenu.color_label_foreground:c08080-f
+
+# color specification yuv-opacity
+# string, default: 0080c0-f
+#gui.osdmenu.color_label_window:0080c0-f
+
+# color specification yuv-opacity
+# string, default: 008000-f
+#gui.osdmenu.color_slider:008000-f
+
+# color specification yuv-opacity
+# string, default: ffff00-f
+#gui.osdmenu.color_slider_knob:ffff00-f
+
+# color specification yuv-opacity
+# string, default: 008000-f
+#gui.osdmenu.color_text_border:008000-f
+
+# color specification yuv-opacity
+# string, default: ffff00-f
+#gui.osdmenu.color_text_foreground:ffff00-f
+
+# color specification yuv-opacity
+# string, default: 0080c0-f
+#gui.osdmenu.color_text_window:0080c0-f
+
+# directory a media in dvd device will be mounted
+# string, default: /dvd
+#gui.osdmenu.dvd_mountpoint:/dvd
 
 # palette (foreground-border-background) to use for subtitles and OSD
 # { white-black-transparent  white-none-transparent  white-none-translucid  yellow-black-transparent }, default: 0
 #ui.osd.text_palette:white-black-transparent
 
-# notify changes to the hardware mixer
-# bool, default: 1
-#audio.alsa_hw_mixer:1
-
-# Audiodriver to use (default: auto)
-# { auto  pulseaudio  alsa  oss  jack  file  none }, default: 0
+# audio driver to use
+# { auto  null  pulseaudio  alsa  oss  jack  file  none }, default: 0
 #audio.driver:auto
-
-# Use software audio mixer
-# bool, default: 1
-#audio.mixer_software:1
 
 # device used for pulseaudio
 # string, default: 
@@ -46,37 +258,7 @@ gui.panel_y:794
 # [0..200], default: 100
 #audio.a52.level:100
 
-# device used for mono output
-# string, default: default
-#audio.device.alsa_default_device:default
-
-# device used for stereo output
-# string, default: plug:front:default
 audio.device.alsa_front_device:default
-
-# alsa mixer device
-# string, default: PCM
-#audio.device.alsa_mixer_name:PCM
-
-# sound card can do mmap
-# bool, default: 0
-#audio.device.alsa_mmap_enable:0
-
-# device used for 5.1-channel output
-# string, default: iec958:AES0=0x6,AES1=0x82,AES2=0x0,AES3=0x2
-#audio.device.alsa_passthrough_device:iec958:AES0=0x6,AES1=0x82,AES2=0x0,AES3=0x2
-
-# device used for 4-channel output
-# string, default: plug:surround40:0
-#audio.device.alsa_surround40_device:plug:surround40:0
-
-# device used for 5.1-channel output
-# string, default: plug:surround51:0
-#audio.device.alsa_surround51_device:plug:surround51:0
-
-# speaker arrangement
-# { Mono 1.0  Stereo 2.0  Headphones 2.0  Stereo 2.1  Surround 3.0  Surround 4.0  Surround 4.1  Surround 5.0  Surround 5.1  Surround 6.0  Surround 6.1  Surround 7.1  Pass Through }, default: 1
-#audio.output.speaker_arrangement:Stereo 2.0
 
 # offset for digital passthrough
 # numeric, default: 0
@@ -106,17 +288,9 @@ audio.volume.mixer_volume:100
 # bool, default: 0
 #audio.volume.remember_volume:0
 
-# Videodriver to use (default: auto)
-# { auto  dxr3  aadxr3  xv  XDirectFB  DirectFB  SyncFB  opengl  xshm  aa  caca  none  xxmc  sdl  fb  xvmc }, default: 0
+# video driver to use
+# { auto  vdpau  aadxr3  dxr3  xv  XDirectFB  raw  opengl  xshm  none  xxmc  sdl  xvmc }, default: 0
 #video.driver:auto
-
-# Monitor horizontal resolution (dpi).
-# [1..200], default: 78
-#video.screen_x_res:78
-
-# Monitor vertical resolution (dpi).
-# [1..200], default: 78
-#video.screen_y_res:78
 
 # pitch alignment workaround
 # bool, default: 0
@@ -129,10 +303,6 @@ audio.volume.mixer_volume:100
 # Xv port number
 # numeric, default: 0
 #video.device.xv_port:0
-
-# enable vblank sync
-# bool, default: 1
-#video.device.xv_sync_to_vblank:1
 
 # disable exact alpha blending of overlays
 # bool, default: 0
@@ -150,14 +320,15 @@ audio.volume.mixer_volume:100
 # [0..100], default: 50
 #video.output.vertical_position:50
 
-# deinterlace method (deprecated)
-# { none  bob  weave  greedy  onefield  onefield_xv  linearblend }, default: 4
-#video.output.xv_deinterlace_method:onefield
 video.output.xv_deinterlace_method:linearblend
 
 # Choose speed over specification compliance
 # bool, default: 0
 #video.processing.ffmpeg_choose_speed_over_accuracy:0
+
+# Enable direct rendering
+# bool, default: 1
+#video.processing.ffmpeg_direct_rendering:1
 
 # MPEG-4 postprocessing quality
 # [0..6], default: 3
@@ -171,6 +342,22 @@ video.output.xv_deinterlace_method:linearblend
 # numeric, default: 1
 #video.processing.ffmpeg_thread_count:1
 
+# DXR3 device number
+# numeric, default: 0
+#dxr3.device_number:0
+
+# swap odd and even lines
+# bool, default: 0
+#dxr3.encoding.swap_fields:0
+
+# add black bars to correct aspect ratio
+# bool, default: 1
+#dxr3.encoding.add_bars:1
+
+# use smooth play mode for mpeg encoder playback
+# bool, default: 1
+#dxr3.encoding.alt_play_mode:1
+
 # device used for CD audio
 # string, default: /dev/cdrom
 #media.audio_cd.device:/dev/cdrom
@@ -183,10 +370,6 @@ video.output.xv_deinterlace_method:linearblend
 # bool, default: 1
 #media.audio_cd.use_cddb:1
 
-# CDDB cache directory
-# string, default: /home/antymat/.xine/cddbcache
-#media.audio_cd.cddb_cachedir:/home/antymat/.xine/cddbcache
-
 # CDDB server port
 # numeric, default: 8880
 #media.audio_cd.cddb_port:8880
@@ -194,6 +377,34 @@ video.output.xv_deinterlace_method:linearblend
 # CDDB server name
 # string, default: freedb.freedb.org
 #media.audio_cd.cddb_server:freedb.freedb.org
+
+# BluRay player country code
+# string, default: en
+#media.bluray.country:en
+
+# device used for BluRay playback
+# string, default: /dev/dvd
+#media.bluray.device:/dev/dvd
+
+# default language for BluRay playback
+# string, default: eng
+#media.bluray.language:eng
+
+# BluRay mount point
+# string, default: /mnt/bluray
+#media.bluray.mountpoint:/mnt/bluray
+
+# parental control age limit (1-99)
+# numeric, default: 99
+#media.bluray.parental:99
+
+# BluRay player region code (1=A, 2=B, 4=C)
+# numeric, default: 7
+#media.bluray.region:7
+
+# unit for the skip action
+# { skip chapter  skip title }, default: 0
+#media.bluray.skip_behaviour:skip chapter
 
 # directory for saving streams
 # string, default: 
@@ -210,10 +421,6 @@ video.output.xv_deinterlace_method:linearblend
 # Number of seconds until tuning times out.
 # numeric, default: 0
 #media.dvb.tuning_timeout:0
-
-# DVB Channels config file
-# string, default: /home/antymat/.xine/channels.conf
-#media.dvb.channels_conf:/home/antymat/.xine/channels.conf
 
 # Enable the DVB GUI
 # bool, default: 1
@@ -259,13 +466,9 @@ video.output.xv_deinterlace_method:linearblend
 # { skip program  skip part  skip title }, default: 0
 #media.dvd.skip_behaviour:skip program
 
-# path to the title key cache
-# string, default: /home/antymat/.dvdcss/
-#media.dvd.css_cache_path:/home/antymat/.dvdcss/
-
 # file browsing start location
-# string, default: /home/antymat
-#media.files.origin_path:/home/antymat
+# string, default: /home/antymat/rip/cd/TheBeatles/mono
+#media.files.origin_path:/home/antymat/rip/cd/TheBeatles/mono
 
 # list hidden files
 # bool, default: 0
@@ -335,33 +538,21 @@ video.output.xv_deinterlace_method:linearblend
 # string, default: %F - %I %N%L%S, disk %c of %C - %v %A
 #media.vcd.title_format:%F - %I %N%L%S, disk %c of %C - %v %A
 
-# v4l ALSA audio input device
-# string, default: plughw:0,0
-#media.video4linux.audio_device:plughw:0,0
-
-# v4l radio device
-# string, default: /dev/radio0
-#media.video4linux.radio_device:/dev/radio0
-
-# v4l video device
-# string, default: /dev/video0
-#media.video4linux.video_device:/dev/video0
-
-# v4l TV standard
-# { AUTO  PAL  NTSC  SECAM  OLD }, default: 4
-#media.video4linux.tv_standard:OLD
-
 # device used for WinTV-PVR 250/350 (pvr plugin)
 # string, default: /dev/video0
 #media.wintv_pvr.device:/dev/video0
 
 # path to RealPlayer codecs
-# string, default: 
-#decoder.external.real_codecs_path:
-
-# path to Win32 codecs
 # string, default: /usr/lib/codecs
-#decoder.external.win32_codecs_path:/usr/lib/codecs
+#decoder.external.real_codecs_path:/usr/lib/codecs
+
+# opacity for the black parts of bitmapped subtitles
+# [0..100], default: 67
+#subtitles.bitmap.black_opacity:67
+
+# opacity for the colour parts of bitmapped subtitles
+# [0..100], default: 100
+#subtitles.bitmap.colour_opacity:100
 
 # subtitle size
 # { tiny  small  normal  large  very large  huge }, default: 1
@@ -391,6 +582,10 @@ video.output.xv_deinterlace_method:linearblend
 # bool, default: 1
 #subtitles.separate.use_unscaled_osd:1
 
+# default duration of subtitle display in seconds
+# numeric, default: 4
+#subtitles.separate.timeout:4
+
 # frames per second to generate
 # numeric, default: 14
 #effects.goom.fps:14
@@ -418,6 +613,14 @@ video.output.xv_deinterlace_method:linearblend
 # default number of video frames
 # numeric, default: 15
 #engine.buffers.video_num_frames:15
+
+# disable decoder flush at discontinuity
+# bool, default: 0
+#engine.decoder.disable_flush_at_discontinuity:0
+
+# disable decoder flush from video out
+# bool, default: 0
+#engine.decoder.disable_flush_from_video_out:0
 
 # priority for a/52 decoder
 # numeric, default: 0
@@ -491,14 +694,6 @@ video.output.xv_deinterlace_method:linearblend
 # numeric, default: 0
 #engine.decoder_priorities.pcm:0
 
-# priority for qta decoder
-# numeric, default: 0
-#engine.decoder_priorities.qta:0
-
-# priority for qtv decoder
-# numeric, default: 0
-#engine.decoder_priorities.qtv:0
-
 # priority for realadec decoder
 # numeric, default: 0
 #engine.decoder_priorities.realadec:0
@@ -531,6 +726,10 @@ video.output.xv_deinterlace_method:linearblend
 # numeric, default: 0
 #engine.decoder_priorities.spudvb:0
 
+# priority for spuhdmv decoder
+# numeric, default: 0
+#engine.decoder_priorities.spuhdmv:0
+
 # priority for sputext decoder
 # numeric, default: 0
 #engine.decoder_priorities.sputext:0
@@ -539,6 +738,26 @@ video.output.xv_deinterlace_method:linearblend
 # numeric, default: 0
 #engine.decoder_priorities.theora:0
 
+# priority for vdpau_h264 decoder
+# numeric, default: 0
+#engine.decoder_priorities.vdpau_h264:0
+
+# priority for vdpau_h264_alter decoder
+# numeric, default: 0
+#engine.decoder_priorities.vdpau_h264_alter:0
+
+# priority for vdpau_mpeg12 decoder
+# numeric, default: 0
+#engine.decoder_priorities.vdpau_mpeg12:0
+
+# priority for vdpau_mpeg4 decoder
+# numeric, default: 0
+#engine.decoder_priorities.vdpau_mpeg4:0
+
+# priority for vdpau_vc1 decoder
+# numeric, default: 0
+#engine.decoder_priorities.vdpau_vc1:0
+
 # priority for vorbis decoder
 # numeric, default: 0
 #engine.decoder_priorities.vorbis:0
@@ -546,14 +765,6 @@ video.output.xv_deinterlace_method:linearblend
 # priority for wavpackdec decoder
 # numeric, default: 0
 #engine.decoder_priorities.wavpackdec:0
-
-# priority for win32a decoder
-# numeric, default: 0
-#engine.decoder_priorities.win32a:0
-
-# priority for win32v decoder
-# numeric, default: 0
-#engine.decoder_priorities.win32v:0
 
 # priority for yuv decoder
 # numeric, default: 0
@@ -578,16 +789,4 @@ engine.performance.memcpy_method:libc
 # allow implicit changes to the configuration (e.g. by MRL)
 # bool, default: 0
 #misc.implicit_config:0
-
-# Font for OSD Messages
-# string, default: sans
-#osd.osd_font:sans
-
-# Show OSD Messages
-# bool, default: 1
-#osd.osd_messages:1
-
-# Size of OSD text
-# { tiny  small  medium  large  very large  huge }, default: 1
-#osd.osd_size:small
 
