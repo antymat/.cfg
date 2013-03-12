@@ -14,3 +14,13 @@ fi
 if [ -d ~/bin ] ; then
     PATH=~/bin:"${PATH}"
 fi
+
+# Set MANPATH so it includes users' private man if it exists
+if [ -d "${HOME}/man" ]; then
+  MANPATH="${HOME}/man:${MANPATH}"
+fi
+
+# Set INFOPATH so it includes users' private info if it exists
+if [ -d "${HOME}/info" ]; then
+  INFOPATH="${HOME}/info:${INFOPATH}"
+fi

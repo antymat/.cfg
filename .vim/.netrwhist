@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/antymat/finance'
-let g:netrw_dirhist_2='/home/antymat'
-let g:netrw_dirhist_3='/home/antymat/finance'
-let g:netrw_dirhist_4='/home/antymat/travel'
-let g:netrw_dirhist_5='/home/antymat/work/7languages_in_7weeks/ruby'
-let g:netrw_dirhist_6='/home/antymat/rip/cd/ZłotaKolekcja'
-let g:netrw_dirhist_7='/home/antymat/work/google/tail'
-let g:netrw_dirhist_8='/home/antymat/work/google'
-let g:netrw_dirhist_9='/home/antymat/work/google/network'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/antymat/.vim'
+let g:netrw_dirhist_2='/home/antymat/.vim/plugin'
