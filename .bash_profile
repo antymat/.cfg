@@ -24,3 +24,7 @@ fi
 if [ -d "${HOME}/info" ]; then
   INFOPATH="${HOME}/info:${INFOPATH}"
 fi
+
+
+test -r ~/algs4/bin/config.sh && source ~/algs4/bin/config.sh
+

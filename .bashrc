@@ -72,10 +72,13 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 
+source ~/.profile
+
 export LC_MONETARY=pl_PL.utf8
 export PATH=/sbin:/usr/sbin:$PATH
 . /opt/ecos/ecosenv.sh
-export HISTSIZE=10000
+export HISTSIZE=1000000
+HISTFILESIZE=2000000
 
 
 

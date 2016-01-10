@@ -1,7 +1,7 @@
 # toxine playlist
 
 entry {
-	identifier = TheBeatles_AHardDay_sNight_mono.iso.cue;
-	mrl = /home/antymat/rip/cd/TheBeatles/mono/TheBeatles_AHardDay_sNight_mono.iso.cue;
+	identifier = Title 1, Chapter 1;
+	mrl = dvd:/;
 };
 # END

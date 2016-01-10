@@ -12,7 +12,7 @@
 
 # Configuration experience level
 # { Beginner  Advanced  Expert  Master of the known universe }, default: 0
-#gui.experience_level:Beginner
+gui.experience_level:Advanced
 
 # Enable OSD support
 # bool, default: 1
@@ -166,15 +166,33 @@
 # [0..200], default: 100
 #gui.amp_level:100
 
+# numeric, default: 200
+#gui.control_x:200
+
+# numeric, default: 100
+#gui.control_y:100
+
 # gui panel visibility
 # bool, default: 1
-gui.panel_visible:0
+#gui.panel_visible:1
 
 # numeric, default: 200
-gui.panel_x:568
+gui.panel_x:569
 
 # numeric, default: 100
 gui.panel_y:794
+
+# numeric, default: 200
+#gui.playlist_x:200
+
+# numeric, default: 200
+#gui.playlist_y:200
+
+# numeric, default: 80
+gui.setup_x:656
+
+# numeric, default: 80
+gui.setup_y:103
 
 gui.mrl_browser_y:97
 
@@ -258,6 +276,14 @@ gui.mrl_browser_y:97
 # [0..200], default: 100
 #audio.a52.level:100
 
+# A/52 bass downmix volume
+# [0..200], default: 100
+#audio.a52.lfe_level:100
+
+# use A/52 pass through
+# bool, default: 0
+#audio.device.pulseaudio_a52_pass_through:0
+
 audio.device.alsa_front_device:default
 
 # offset for digital passthrough
@@ -289,7 +315,7 @@ audio.volume.mixer_volume:100
 #audio.volume.remember_volume:0
 
 # video driver to use
-# { auto  vdpau  aadxr3  dxr3  xv  XDirectFB  raw  opengl  xshm  none  xxmc  sdl  xvmc }, default: 0
+# { auto  vdpau  aadxr3  dxr3  xv  vaapi  XDirectFB  opengl  raw  opengl2  xshm  none  xxmc  sdl  xvmc }, default: 0
 #video.driver:auto
 
 # pitch alignment workaround
@@ -304,6 +330,14 @@ audio.volume.mixer_volume:100
 # numeric, default: 0
 #video.device.xv_port:0
 
+# Output color matrix
+# { Signal  Signal+Size  SD  HD }, default: 1
+#video.output.color_matrix:Signal+Size
+
+# Output color range
+# { Auto  MPEG  FULL }, default: 0
+#video.output.color_range:Auto
+
 # disable exact alpha blending of overlays
 # bool, default: 0
 #video.output.disable_exact_alphablend:0
@@ -315,6 +349,10 @@ audio.volume.mixer_volume:100
 # horizontal image position in the output window
 # [0..100], default: 50
 #video.output.horizontal_position:50
+
+# treat screen pixels as exactly square
+# bool, default: 0
+#video.output.square_pixels:0
 
 # vertical image position in the output window
 # [0..100], default: 50
@@ -330,6 +368,10 @@ video.output.xv_deinterlace_method:linearblend
 # bool, default: 1
 #video.processing.ffmpeg_direct_rendering:1
 
+# Enable VAAPI
+# bool, default: 1
+#video.processing.ffmpeg_enable_vaapi:1
+
 # MPEG-4 postprocessing quality
 # [0..6], default: 3
 #video.processing.ffmpeg_pp_quality:3
@@ -341,6 +383,10 @@ video.output.xv_deinterlace_method:linearblend
 # FFmpeg video decoding thread count
 # numeric, default: 1
 #video.processing.ffmpeg_thread_count:1
+
+# VAAPI Mpeg2 softdecoding
+# bool, default: 0
+#video.processing.vaapi_mpeg_softdec:0
 
 # DXR3 device number
 # numeric, default: 0
@@ -360,7 +406,7 @@ video.output.xv_deinterlace_method:linearblend
 
 # device used for CD audio
 # string, default: /dev/cdrom
-#media.audio_cd.device:/dev/cdrom
+media.audio_cd.device:/dev/sr0
 
 # slow down disc drive to this speed factor
 # numeric, default: 4
@@ -384,7 +430,7 @@ video.output.xv_deinterlace_method:linearblend
 
 # device used for BluRay playback
 # string, default: /dev/dvd
-#media.bluray.device:/dev/dvd
+media.bluray.device:/dev/sr0
 
 # default language for BluRay playback
 # string, default: eng
@@ -392,7 +438,7 @@ video.output.xv_deinterlace_method:linearblend
 
 # BluRay mount point
 # string, default: /mnt/bluray
-#media.bluray.mountpoint:/mnt/bluray
+media.bluray.mountpoint:/home/antymat/rip/bd/YellowSubmarine
 
 # parental control age limit (1-99)
 # numeric, default: 99
@@ -440,11 +486,11 @@ video.output.xv_deinterlace_method:linearblend
 
 # device used for DVD playback
 # string, default: /dev/dvd
-#media.dvd.device:/dev/dvd
+media.dvd.device:/home/antymat/fuse/hal-9005/rip/dvd/tmp/StarTrek_NextGeneration_S5D4.iso
 
 # raw device set up for DVD access
 # string, default: /dev/rdvd
-#media.dvd.raw_device:/dev/rdvd
+media.dvd.raw_device:
 
 # read-ahead caching
 # bool, default: 1
@@ -468,15 +514,14 @@ video.output.xv_deinterlace_method:linearblend
 
 # file browsing start location
 # string, default: /home/antymat/rip/cd/TheBeatles/mono
-#media.files.origin_path:/home/antymat/rip/cd/TheBeatles/mono
+media.files.origin_path:/home/antymat/fuse/hal-9002/rip/dvd
 
 # list hidden files
 # bool, default: 0
 #media.files.show_hidden_files:0
 
 # network bandwidth
-# { 14.4 Kbps (Modem)  19.2 Kbps (Modem)  28.8 Kbps (Modem)  33.6 Kbps (Modem)  34.4 Kbps (Modem)  57.6 Kbps (Modem)  115.2 Kbps (ISDN)  262.2 Kbps (Cable/DSL)  393.2 Kbps (Cable/DSL)  524.3 Kbps (Cable/DSL)  1.5 Mbps (T1)  10.5 Mbps (LAN) }, default: 10
-#media.network.bandwidth:1.5 Mbps (T1)
+# { 14.4 Kbps (Modem)  19.2 Kbps (Modem)  28.8 Kbps (Modem)  33.6 Kbps (Modem)  34.4 Kbps (Modem)  57.6 Kbps (Modem)  115.2 Kbps (ISDN)  262.2 Kbps (Cable/DSL)  393.2 Kbps (Cable/DSL)  524.3 Kbps (Cable/DSL) }, default: 10
 
 # Timeout for network stream reading (in seconds)
 # numeric, default: 30
@@ -670,6 +715,10 @@ video.output.xv_deinterlace_method:linearblend
 # numeric, default: 0
 #engine.decoder_priorities.flacdec:0
 
+# priority for gdkpixbuf decoder
+# numeric, default: 0
+#engine.decoder_priorities.gdkpixbuf:0
+
 # priority for gsm610 decoder
 # numeric, default: 0
 #engine.decoder_priorities.gsm610:0
@@ -677,6 +726,18 @@ video.output.xv_deinterlace_method:linearblend
 # priority for image decoder
 # numeric, default: 0
 #engine.decoder_priorities.image:0
+
+# priority for jpeg decoder
+# numeric, default: 0
+#engine.decoder_priorities.jpeg:0
+
+# priority for libvpx-vp8 decoder
+# numeric, default: 0
+#engine.decoder_priorities.libvpx-vp8:0
+
+# priority for libvpx-vp9 decoder
+# numeric, default: 0
+#engine.decoder_priorities.libvpx-vp9:0
 
 # priority for mad decoder
 # numeric, default: 0
@@ -775,7 +836,7 @@ video.output.xv_deinterlace_method:linearblend
 #engine.demux.strategy:default
 
 # memcopy method used by xine
-# { probe  libc  kernel  mmx  mmxext  sse }, default: 0
+# { probe  libc  kernel  mmx  mmxext  sse  avx }, default: 0
 engine.performance.memcpy_method:libc
 
 # percentage of discarded frames to tolerate
