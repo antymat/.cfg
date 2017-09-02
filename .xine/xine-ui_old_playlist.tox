@@ -1,7 +1,7 @@
 # toxine playlist
 
 entry {
-	identifier = Title 1, Chapter 1;
-	mrl = dvd:/;
+	identifier = bd:/;
+	mrl = bd:/;
 };
 # END

@@ -32,7 +32,8 @@ map <F12> :set number!<CR>
 "set noexpandtab
 "au GUIEnter * simalt ~x
 let Tlist_Inc_Winwidth = 0
-
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 
 	" vim -b : edit binary using xxd-format!

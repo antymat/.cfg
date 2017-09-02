@@ -166,12 +166,6 @@ gui.experience_level:Advanced
 # [0..200], default: 100
 #gui.amp_level:100
 
-# numeric, default: 200
-#gui.control_x:200
-
-# numeric, default: 100
-#gui.control_y:100
-
 # gui panel visibility
 # bool, default: 1
 #gui.panel_visible:1
@@ -182,19 +176,23 @@ gui.panel_x:569
 # numeric, default: 100
 gui.panel_y:794
 
-# numeric, default: 200
-#gui.playlist_x:200
+# [0..65535], default: -1
+#gui.vo_brightness:-1
 
-# numeric, default: 200
-#gui.playlist_y:200
+# [0..65535], default: -1
+#gui.vo_contrast:-1
 
-# numeric, default: 80
-gui.setup_x:656
+# [0..65535], default: -1
+#gui.vo_hue:-1
 
-# numeric, default: 80
-gui.setup_y:103
+# [0..65535], default: -1
+#gui.vo_saturation:-1
 
 gui.mrl_browser_y:97
+
+gui.setup_x:722
+
+gui.setup_y:237
 
 # color specification yuv-opacity
 # string, default: 8080c0-f
@@ -315,20 +313,8 @@ audio.volume.mixer_volume:100
 #audio.volume.remember_volume:0
 
 # video driver to use
-# { auto  vdpau  aadxr3  dxr3  xv  vaapi  XDirectFB  opengl  raw  opengl2  xshm  none  xxmc  sdl  xvmc }, default: 0
-#video.driver:auto
-
-# pitch alignment workaround
-# bool, default: 0
-#video.device.xv_pitch_alignment:0
-
-# video display method preference
-# { Any  Overlay  Textured Video  Blitter }, default: 0
-#video.device.xv_preferred_method:Any
-
-# Xv port number
-# numeric, default: 0
-#video.device.xv_port:0
+# { auto  vdpau  xv  vaapi  XDirectFB  opengl  raw  opengl2  xshm  none  xxmc  sdl  xvmc }, default: 0
+video.driver:vaapi
 
 # Output color matrix
 # { Signal  Signal+Size  SD  HD }, default: 1
@@ -337,10 +323,6 @@ audio.volume.mixer_volume:100
 # Output color range
 # { Auto  MPEG  FULL }, default: 0
 #video.output.color_range:Auto
-
-# disable exact alpha blending of overlays
-# bool, default: 0
-#video.output.disable_exact_alphablend:0
 
 # disable all video scaling
 # bool, default: 0
@@ -354,9 +336,61 @@ audio.volume.mixer_volume:100
 # bool, default: 0
 #video.output.square_pixels:0
 
+# VAAPI color conversion method
+# { user_matrix  simple  simple+2  simple+3 }, default: 3
+#video.output.vaapi_csc_mode:simple+3
+
+# vaapi: set deinterlace to 0 ( none ), 1 ( top field ), 2 ( bob ).
+# numeric, default: 0
+#video.output.vaapi_deinterlace:0
+
+# vaapi: set vaapi_guarded_render to 0 ( no ) 1 ( yes )
+# numeric, default: 1
+#video.output.vaapi_guarded_render:1
+
+# vaapi: set scaling level to : default (default) fast (fast) hq (HQ) nla (anamorphic)
+# { default  fast  hq  nla }, default: 0
+#video.output.vaapi_scaling_level:default
+
+# vaapi: swap UV planes.
+# bool, default: 0
+#video.output.vaapi_swap_uv_planes:0
+
+# vaapi: VDR osd height workaround.
+# numeric, default: 0
+#video.output.vaapi_vdr_osd_height:0
+
+# vaapi: VDR osd width workaround.
+# numeric, default: 0
+#video.output.vaapi_vdr_osd_width:0
+
 # vertical image position in the output window
 # [0..100], default: 50
 #video.output.vertical_position:50
+
+# Brightness setting
+# [-100..100], default: 0
+#video.output.vaapi_brightness:0
+
+# Contrast setting
+# [0..100], default: 50
+#video.output.vaapi_contrast:50
+
+# Hue setting
+# [-180..180], default: 0
+#video.output.vaapi_hue:0
+
+# vaapi: opengl output rendering
+# bool, default: 0
+#video.output.vaapi_opengl_render:0
+
+# vaapi: opengl rendering tfp
+# bool, default: 0
+#video.output.vaapi_opengl_use_tfp:0
+
+# Saturation setting
+# [0..100], default: 50
+#video.output.vaapi_saturation:50
 
 video.output.xv_deinterlace_method:linearblend
 
@@ -388,22 +422,6 @@ video.output.xv_deinterlace_method:linearblend
 # bool, default: 0
 #video.processing.vaapi_mpeg_softdec:0
 
-# DXR3 device number
-# numeric, default: 0
-#dxr3.device_number:0
-
-# swap odd and even lines
-# bool, default: 0
-#dxr3.encoding.swap_fields:0
-
-# add black bars to correct aspect ratio
-# bool, default: 1
-#dxr3.encoding.add_bars:1
-
-# use smooth play mode for mpeg encoder playback
-# bool, default: 1
-#dxr3.encoding.alt_play_mode:1
-
 # device used for CD audio
 # string, default: /dev/cdrom
 media.audio_cd.device:/dev/sr0
@@ -430,7 +448,7 @@ media.audio_cd.device:/dev/sr0
 
 # device used for BluRay playback
 # string, default: /dev/dvd
-media.bluray.device:/dev/sr0
+media.bluray.device:/home/antymat/fuse/hal-9005/rip/bd/HarryPotterAndTheChamberOfSecrets
 
 # default language for BluRay playback
 # string, default: eng
@@ -438,7 +456,7 @@ media.bluray.device:/dev/sr0
 
 # BluRay mount point
 # string, default: /mnt/bluray
-media.bluray.mountpoint:/home/antymat/rip/bd/YellowSubmarine
+media.bluray.mountpoint:/home/antymat/fuse/hal-9005/rip/bd/HarryPotterAndTheChamberOfSecrets
 
 # parental control age limit (1-99)
 # numeric, default: 99
@@ -486,7 +504,7 @@ media.bluray.mountpoint:/home/antymat/rip/bd/YellowSubmarine
 
 # device used for DVD playback
 # string, default: /dev/dvd
-media.dvd.device:/home/antymat/fuse/hal-9005/rip/dvd/tmp/StarTrek_NextGeneration_S5D4.iso
+media.dvd.device:/home/antymat/fuse/hal-9002/rip/dvd/series/ErgoProxy/ergo_proxy_01.iso
 
 # raw device set up for DVD access
 # string, default: /dev/rdvd
@@ -627,10 +645,6 @@ media.files.origin_path:/home/antymat/fuse/hal-9002/rip/dvd
 # bool, default: 1
 #subtitles.separate.use_unscaled_osd:1
 
-# default duration of subtitle display in seconds
-# numeric, default: 4
-#subtitles.separate.timeout:4
-
 # frames per second to generate
 # numeric, default: 14
 #effects.goom.fps:14
@@ -656,8 +670,8 @@ media.files.origin_path:/home/antymat/fuse/hal-9002/rip/dvd
 #engine.buffers.video_num_buffers:500
 
 # default number of video frames
-# numeric, default: 15
-#engine.buffers.video_num_frames:15
+# numeric, default: 50
+#engine.buffers.video_num_frames:50
 
 # disable decoder flush at discontinuity
 # bool, default: 0
@@ -682,14 +696,6 @@ media.files.origin_path:/home/antymat/fuse/hal-9002/rip/dvd
 # priority for dvaudio decoder
 # numeric, default: 0
 #engine.decoder_priorities.dvaudio:0
-
-# priority for dxr3-mpeg2 decoder
-# numeric, default: 0
-#engine.decoder_priorities.dxr3-mpeg2:0
-
-# priority for dxr3-spudec decoder
-# numeric, default: 0
-#engine.decoder_priorities.dxr3-spudec:0
 
 # priority for faad decoder
 # numeric, default: 0

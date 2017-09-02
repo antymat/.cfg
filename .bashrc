@@ -75,10 +75,10 @@ fi
 source ~/.profile
 
 export LC_MONETARY=pl_PL.utf8
-export PATH=/sbin:/usr/sbin:$PATH
+export PATH=/sbin:/usr/sbin:/usr/local/bin:$PATH
 . /opt/ecos/ecosenv.sh
 export HISTSIZE=1000000
 HISTFILESIZE=2000000
 
-
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 

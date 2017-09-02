@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/antymat'
-let g:netrw_dirhist_2='/home/antymat/fuse'
-let g:netrw_dirhist_3='/home/antymat/.config/gtk-3.0'
-let g:netrw_dirhist_4='/home/antymat/.config'
-let g:netrw_dirhist_5='/home/antymat'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/run/user'
+let g:netrw_dirhist_2='/run/user/1000'
+let g:netrw_dirhist_3='/run/user/1000/gvfs'
+let g:netrw_dirhist_4='/run/user/1000/gvfs/smb-share:server=hal-9000_win,share=users'
+let g:netrw_dirhist_5='/run/user/1000/gvfs/smb-share:server=hal-9000_win,share=users/Marcin Wolcendorf'
+let g:netrw_dirhist_6='/run/user/1000/gvfs/smb-share:server=hal-9000_win,share=users/Marcin Wolcendorf/Applications'
+let g:netrw_dirhist_7='/run/user/1000/gvfs/smb-share:server=hal-9000_win,share=users/Marcin Wolcendorf/Applications/FindVUK_0.96'
+let g:netrw_dirhist_8='/run/user/1000/gvfs/smb-share:server=hal-9000_win,share=users/Marcin Wolcendorf/Applications/FindVUK_0.96/log'
