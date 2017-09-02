@@ -1,6 +1,32 @@
 syn on
+"set nu
+set si
 set hls
+set smartindent
+set hid
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set bufhidden=hide
+set nowrap
+set laststatus=2
+set ruler
+set backspace=indent,eol,start
+set formatoptions=croq
+set sm
+set printoptions=number:y,paper:letter
+set pfn=:h9
+set incsearch
+set foldmethod=syntax
+" vertical splitting will open the new window on the right. 
+set splitright
+"http://vim.wikia.com/wiki/Highlight_current_line
+set cursorline
+set ruler
+set bg=light
 set ic
+set fileencodings=ucs-bom,utf-8,latin2
 
 
 " Specify a directory for plugins
@@ -19,6 +45,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'vivien/vim-linux-coding-style'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'vim-scripts/ScrollColors'
+Plug 'vim-scripts/Colour-Sampler-Pack'
+Plug 'vim-scripts/sokoban.vim'
+Plug 'vim-scripts/mimicpak'
+
 
 "" Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'

@@ -89,6 +89,7 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -108,4 +109,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias config='/usr/bin/git --git-dir=/home/antymat/.cfg/ --work-tree=/home/antymat'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+

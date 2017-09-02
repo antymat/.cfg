@@ -1,3 +1,9 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = matching
 [alias]
   st = status
   ci = commit
