@@ -448,7 +448,7 @@ media.audio_cd.device:/dev/sr0
 
 # device used for BluRay playback
 # string, default: /dev/dvd
-media.bluray.device:/home/antymat/fuse/hal-9005/rip/bd/HarryPotterAndTheChamberOfSecrets
+media.bluray.device:
 
 # default language for BluRay playback
 # string, default: eng
@@ -456,7 +456,7 @@ media.bluray.device:/home/antymat/fuse/hal-9005/rip/bd/HarryPotterAndTheChamberO
 
 # BluRay mount point
 # string, default: /mnt/bluray
-media.bluray.mountpoint:/home/antymat/fuse/hal-9005/rip/bd/HarryPotterAndTheChamberOfSecrets
+media.bluray.mountpoint:
 
 # parental control age limit (1-99)
 # numeric, default: 99
@@ -504,7 +504,7 @@ media.bluray.mountpoint:/home/antymat/fuse/hal-9005/rip/bd/HarryPotterAndTheCham
 
 # device used for DVD playback
 # string, default: /dev/dvd
-media.dvd.device:/home/antymat/fuse/hal-9002/rip/dvd/series/ErgoProxy/ergo_proxy_01.iso
+media.dvd.device:
 
 # raw device set up for DVD access
 # string, default: /dev/rdvd
@@ -532,7 +532,7 @@ media.dvd.raw_device:
 
 # file browsing start location
 # string, default: /home/antymat/rip/cd/TheBeatles/mono
-media.files.origin_path:/home/antymat/fuse/hal-9002/rip/dvd
+media.files.origin_path:
 
 # list hidden files
 # bool, default: 0
